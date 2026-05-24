@@ -79,11 +79,12 @@ export const INCLUSIONS_4_MONTH = [
 ];
 
 export const CONFIG_LINKS = {
-  calendly: "https://calendly.com/drchsameer/30min",
-  formspreeEndpoint: "https://www.saveform.io/api/submit/f63d5e4d-eaea-43bd-897f-0bef2f30837a",
+
+  calendly: process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/drchsameer/30min",
+  formspreeEndpoint: process.env.NEXT_PUBLIC_FORMSPREEE_ENDPOINT,
   instagram: "https://www.instagram.com/drchahmed",
-  email: "drchsameer@gmail.com",
-  phone: "03291322225",
+  email: "dr@chronicpainfree.com",
+  phone: "+923291322225", // Updated with global country dial routing code
   siteName: "chronic pain free"
 };
 

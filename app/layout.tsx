@@ -23,17 +23,26 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chronic Pain Free // Lifestyle Medicine",
-  description: "Evidence-based lifestyle tracks to break central synchronization loops and reclaim functional freedom.",
-  icons: {
-    // Explicitly targets your root image files to force browser caching to snap open
-    icon: [
-      { url: "/logo.png", type: "image/png" }
-    ],
-    apple: [
-      { url: "/logo.png", type: "image/png" }
-    ],
+  title: {
+    default: "Chronic Pain Free // Lifestyle Medicine & Pain Coaching",
+    template: "%s | Chronic Pain Free"
   },
+  description: "Evidence-based somatic, metabolic, and neuroplastic lifestyle coaching tracks engineered by Dr. Ahmed to help you dismantle chronic pain loops and reclaim functional freedom.",
+  keywords: ["chronic pain coaching", "lifestyle medicine", "neuroplastic recovery", "fibromyalgia relief", "chronic pelvic pain management", "cervicogenic headache relief", "Dr. Ahmed pain coach"],
+  authors: [{ name: "Dr. Ahmed" }],
+  creator: "Dr. Ahmed",
+  metadataBase: new URL("https://www.chronicpainfree.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Chronic Pain Free // Lifestyle Medicine & Pain Coaching",
+    description: "Look past temporary pharmacological patches. Reclaim your body's structural baseline with a personalized, clinical recovery blueprint.",
+    url: "https://www.chronicpainfree.com",
+    siteName: "Chronic Pain Free",
+    locale: "en_US",
+    type: "website",
+  }
 };
 
 export default function RootLayout({
