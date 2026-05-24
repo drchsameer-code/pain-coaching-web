@@ -37,15 +37,15 @@ export default function Navbar() {
             <>
               <a href="#approach" className="no-underline hover:text-white transition-colors">[ Approach ]</a>
               <a href="#programs" className="no-underline hover:text-white transition-colors">[ Programs ]</a>
-              <Link href="/about" className="no-underline hover:text-white transition-colors">[ About Me ]</Link>
               <a href="#contact" className="no-underline hover:text-white transition-colors">[ Consult ]</a>
+              <Link href="/about" className="no-underline hover:text-white transition-colors">[ About Me ]</Link>
             </>
           ) : (
             <>
               <Link href="/#approach" className="no-underline hover:text-white transition-colors">[ Approach ]</Link>
               <Link href="/#programs" className="no-underline hover:text-white transition-colors">[ Programs ]</Link>
-              <Link href="/about" className={`no-underline hover:text-white transition-colors ${pathname === '/about' ? 'text-[var(--color-lime)] font-bold' : ''}`}>[ About Me ]</Link>
               <Link href="/#contact" className="no-underline hover:text-white transition-colors">[ Consult ]</Link>
+              <Link href="/about" className={`no-underline hover:text-white transition-colors ${pathname === '/about' ? 'text-[var(--color-lime)] font-bold' : ''}`}>[ About Me ]</Link>
             </>
           )}
         </nav>
