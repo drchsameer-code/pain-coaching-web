@@ -57,10 +57,10 @@ export default function ProgramsSection() {
                 </div>
                 <div className="grid grid-cols-2 gap-4 text-xs mono pt-1 border-b border-[var(--color-line)] pb-4 mb-4">
                   <div className="text-white font-medium leading-relaxed">
-                    → Initial programmatic setup & complete clinical baseline mapping
+                    → Initial complete baseline mapping
                   </div>
                   <div className="text-white font-medium text-right leading-relaxed">
-                    → 5 subsequent automated recurring monthly tracking statements
+                    → 5 subsequent automated recurring monthly tracking sessions
                   </div>
                 </div>
                 <div className="p-3.5 bg-[#07070a]/60 border border-[var(--color-line)] flex justify-between items-center">
@@ -122,10 +122,10 @@ export default function ProgramsSection() {
                 </div>
                 <div className="grid grid-cols-2 gap-4 text-xs mono pt-1 border-b border-[var(--color-line)] pb-4 mb-4">
                   <div className="text-white font-medium leading-relaxed">
-                    → Deep diagnostic intake consult & target path strategy alignment
+                    → Targeted path strategy alignment
                   </div>
                   <div className="text-white font-medium text-right leading-relaxed">
-                    → 3 subsequent automated recurring monthly tracking statements
+                    → 3 subsequent automated recurring monthly tracking sessions
                   </div>
                 </div>
                 <div className="p-3.5 bg-[#07070a]/40 border border-[var(--color-line)] flex justify-between items-center">

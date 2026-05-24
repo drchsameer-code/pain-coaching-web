@@ -2,7 +2,6 @@
 
 import React, { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import Link from 'next/link';
 import { CONFIG_LINKS, BANK_DETAILS } from '../../data/coachingData';
 
 function SubscriptionFormContent() {
@@ -11,18 +10,7 @@ function SubscriptionFormContent() {
   const structuralAmount = searchParams.get('plan') === '4-month' ? '$450 Initial Enrollment' : '$350 Initial Enrollment';
 
   return (
-    <div className="min-h-screen bg-[#07070a] text-[#f4f4f8] font-sans selection:bg-[var(--color-lime)] selection:text-black">
-      
-      {/* Mini Editorial Nav */}
-      <nav className="border-b border-[var(--color-line)] bg-[#07070a]/90 sticky top-0 z-50 backdrop-blur-md">
-        <div className="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
-          <Link href="/" className="flex items-baseline gap-1.5 text-white no-underline font-semibold text-base tracking-tight">
-            ← lifestyle medicine <span className="display text-lg text-[var(--color-lime)]">// return home</span>
-          </Link>
-          <span className="mono text-[10px] text-[var(--color-text-3)] uppercase tracking-widest">SECURE PAYMENT CONSOLE</span>
-        </div>
-      </nav>
-
+    <>
       <main className="max-w-3xl mx-auto px-6 py-16">
         
         {/* Header Block */}
@@ -41,13 +29,13 @@ function SubscriptionFormContent() {
           
           {/* BANK WIRE SPECIFICATIONS LEDGER CARD */}
           <div className="bg-[var(--color-surface)] border border-[var(--color-line)] p-8 relative">
-            <div className="mono text-[11px] text-[var(--color-text-3)] uppercase tracking-wider mb-4">OPTION 01: DIRECT SECURE BANK WIRE</div>
+            <div className="mono text-[11px] text-[var(--color-text-3)] tracking-wider mb-4">OPTION 01: DIRECT SECURE BANK WIRE</div>
             <h3 className="text-xl font-bold tracking-tight m-0 text-white mb-2">Transfer Instructions</h3>
             <p className="text-sm text-[var(--color-text-2)] leading-relaxed mb-6">
               To activate your dedicated somatic monitoring schedule immediately, transmit your initial program enrollment fee to the audited account specifications listed below.
             </p>
 
-            {/* Strict Grid Ledger */}
+            {/* Strict Grid Ledger with Province Feed */}
             <div className="border border-[var(--color-line)] bg-[#07070a]/50 p-6 space-y-4 rounded">
               <div className="flex justify-between items-center border-b border-[var(--color-line)] pb-2.5">
                 <span className="mono text-xs text-[var(--color-text-3)] uppercase">Bank Name</span>
@@ -61,9 +49,13 @@ function SubscriptionFormContent() {
                 <span className="mono text-xs text-[var(--color-text-3)] uppercase">Account Number</span>
                 <span className="mono text-sm text-white font-bold select-all tracking-wider">{BANK_DETAILS.accountNumber}</span>
               </div>
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center border-b border-[var(--color-line)] pb-2.5">
                 <span className="mono text-xs text-[var(--color-text-3)] uppercase">IBAN routing</span>
-                <span className="mono text-xs text-white font-mono select-all tracking-tight">{BANK_DETAILS.iban}</span>
+                <span className="mono text-sm text-white font-mono select-all tracking-tight">{BANK_DETAILS.iban}</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="mono text-xs text-[var(--color-text-3)] uppercase">Province</span>
+                <span className="mono text-sm text-white font-medium">Islamabad Capital Territory (ICT)</span>
               </div>
             </div>
 
@@ -80,7 +72,7 @@ function SubscriptionFormContent() {
           {/* CALENDLY BACKOUT ESCAPE PANEL */}
           <div className="bg-[var(--color-bg-2)] border border-[var(--color-line)] p-8 text-center flex flex-col items-center justify-center">
             <span className="text-white/40 block mb-2 text-lg">✦</span>
-            <h4 className="text-lg font-bold tracking-tight m-0 text-white mb-2">Want to clear biological questions first?</h4>
+            <h4 className="text-lg font-bold tracking-tight m-0 text-white mb-2">Want to book a free pre-assessment call?</h4>
             <p className="text-xs text-[var(--color-text-2)] leading-relaxed max-w-md mx-auto mb-6">
               If you haven't processed an initial assessment timeline or prefer to review your clinical pain presentation profile live with us prior to subscription initiation, grab your open slot now.
             </p>
@@ -90,13 +82,13 @@ function SubscriptionFormContent() {
               rel="noopener noreferrer" 
               className="btn btn-ghost text-xs tracking-wider uppercase font-semibold py-3 px-6 rounded-full"
             >
-              Secure Free 45-Min Consult Call →
+              Secure Free 40-Min Consult Call →
             </a>
           </div>
 
         </div>
       </main>
-    </div>
+    </>
   );
 }
 

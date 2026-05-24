@@ -1,31 +1,25 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import TickerMarquee from '../components/TickerMarquee';
 import Hero from '../components/Hero';
-import ConditionsGrid from '../components/ConditionsGrid'; // <-- Added Sub-module
+import ConditionsGrid from '../components/ConditionsGrid';
 import Carousel from '../components/Carousel';
 import ProgramsSection from '../components/ProgramsSection';
 import ContactForm from '../components/ContactForm';
-import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className="bg-[var(--color-bg)] text-[var(--color-text)]">
-      
-      {/* 1. Global Navigation Bar */}
-      <Navbar />
-
-      {/* 2. Scrolling Ticker ribbon strip */}
+    <>
+      {/* Ticker ribbon strip */}
       <TickerMarquee />
 
-      {/* 3. Hero Clinical Callout Frame */}
+      {/* Hero Clinical Callout Frame */}
       <Hero />
 
-      {/* 4. Mapped Pain Conditions 3x2 Matrix Card Grid */}
+      {/* Mapped Pain Conditions 3x2 Matrix Card Grid */}
       <ConditionsGrid />
 
-      {/* 5. Interactive Strategic Carousel (3 Pillars Map) */}
-      <section id="approach" className="max-w-7xl mx-auto px-6 md:px-12 py-24 border-b border-[var(--color-line)]">
+      {/* Interactive Strategic Carousel (3 Pillars Map) */}
+      <section id="approach" className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-24 border-b border-[var(--color-line)]">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
           <div>
             <div className="eyebrow mb-4">Functional Disciplines</div>
@@ -40,15 +34,11 @@ export default function Home() {
         <Carousel />
       </section>
 
-      {/* 6. Subscription Architecture Timelines */}
+      {/* Subscription Architecture Timelines */}
       <ProgramsSection />
 
-      {/* 7. Secure Lead Generation Framework */}
+      {/* Secure Lead Generation Framework */}
       <ContactForm />
-
-      {/* 8. Legal Footer Blocks */}
-      <Footer />
-
-    </div>
+    </>
   );
 }

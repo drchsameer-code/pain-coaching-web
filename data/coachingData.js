@@ -45,19 +45,19 @@ export const CHRONIC_CONDITIONS = [
     desc: "Addressing widespread hyper-reactive multi-quadrant signaling loops by systematically dampening sensory amplification states."
   },
   {
-    title: "Migraines & Cervicogenic Pain",
-    meta: "NEUROVASCULAR OVERDRIVE",
-    desc: "Decompressing upper cervical spine mobility limitations while resetting autonomic triggers to break persistent throbbing patterns."
+    title: "Cervicogenic Pain, Whiplash Injury & Migraine Headaches",
+    meta: "CRANIO-CERVICAL HYPERALGESIA",
+    desc: "Resolving post-traumatic tissue vulnerabilities, tracking head-neck kinematics, and retraining neurovascular triggers to disrupt cyclic headache loops."
   },
   {
-    title: "Joint Osteoarthritis",
-    meta: "METABOLIC REHABILITATION",
-    desc: "Rebuilding tissue load capacity and joint fluid optimization through progressive, micrograded movement instead of traditional splinting."
+    title: "Chronic Pelvic Pain",
+    meta: "VISCERAL-SOMATIC OVERDRIVE",
+    desc: "Dismantling persistent pelvic floor guarding networks, downregulating lumbopelvic nerve pathways, and calming deep autonomic reactivity loops."
   },
   {
-    title: "Sciatica & Radiculopathy",
-    meta: "NERVE PATHWAY TRACKING",
-    desc: "Isolating nerve root compression paths to resolve radiating discomfort with specific neural flossing parameters and active stabilization."
+    title: "Tension Headache Syndrome",
+    meta: "AUTONOMIC MYOFASCIAL LOAD",
+    desc: "De-escalating continuous cranial-facial muscle tension profiles and resetting sensory filters to raise central pain thresholds."
   },
   {
     title: "Complex Regional Pain (CRPS)",
@@ -79,7 +79,7 @@ export const INCLUSIONS_4_MONTH = [
 ];
 
 export const CONFIG_LINKS = {
-  calendly: "https://calendly.com/",
+  calendly: "https://calendly.com/drchsameer/30min",
   formspreeEndpoint: "https://www.saveform.io/api/submit/f63d5e4d-eaea-43bd-897f-0bef2f30837a",
   instagram: "https://www.instagram.com/drchahmed",
   email: "drchsameer@gmail.com",

@@ -55,7 +55,7 @@ export default function ContactForm() {
           </div>
           <div>
             <label className="mono text-[11px] text-[var(--color-text-2)] uppercase tracking-widest block mb-1">Primary Diagnosis</label>
-            <input type="text" name="diagnosis" placeholder="e.g. Fibromyalgia, Sensitization, Lumbar Pathologies..." value={formData.diagnosis} onChange={handleChange} className="field-input"/>
+            <input type="text" name="diagnosis" placeholder="e.g. Fibromyalgia, chronic regional pain syndrome, low back pain, chronic pelvic pain,..." value={formData.diagnosis} onChange={handleChange} className="field-input"/>
           </div>
           <div>
             <label className="mono text-[11px] text-[var(--color-text-2)] uppercase tracking-widest block mb-1">Somatic History / Backstory</label>
