@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* ── TAILWIND V4 CONFIGURATION THEME ── */
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", "Times New Roman", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-bg: #07070a;
+  --color-bg-2: #0c0c12;
+  --color-surface: #11111a;
+  --color-line: rgba(255,255,255,0.09);
+  --color-line-2: rgba(255,255,255,0.18);
+  --color-text: #f4f4f8;
+  --color-text-2: #9a9aae;
+  --color-text-3: #5e5e74;
+  --color-lime: #d6ff3d;
+  --color-lime-2: #b8e022;
+  --color-violet: #7c5cff;
+  --color-coral: #ff6b54;
+}
+
+/* ── SYSTEM ARCHITECTURE RULES ── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-lime);
+  color: #0a0a0a;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-line-2); border-radius: 99px; }
+
+/* ── TYPOGRAPHY UTILITIES ── */
+.display {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum";
+  letter-spacing: -0.01em;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-3);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.eyebrow::before {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background: var(--color-lime);
+  flex-shrink: 0;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 5px 11px;
+  border: 1px solid var(--color-line-2);
+  border-radius: 4px;
+  color: var(--color-text-2);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 13px 24px;
+  transition: transform 0.12s ease, background 0.15s ease, color 0.15s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn:active { transform: translateY(1px); }
+.btn-lime { background: var(--color-lime); color: #0a0a0a; }
+.btn-lime:hover { background: var(--color-lime-2); }
+.btn-ghost { background: transparent; color: var(--color-text); border: 1px solid var(--color-line-2); }
+.btn-ghost:hover { background: rgba(255,255,255,0.04); }
+
+.field-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-line-2);
+  color: var(--color-text);
+  font-size: 16px;
+  padding: 13px 0;
+  outline: none;
+  transition: border-color 0.15s;
+  border-radius: 0;
+}
+.field-input:focus { border-bottom-color: var(--color-lime); }
+.field-input::placeholder { color: var(--color-text-3); }
+
+/* Marquee Loop */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.3333%); }
+}
+.animate-marquee-loop {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.carousel-track { cursor: grab; }
+.carousel-track:active { cursor: grabbing; }
