@@ -61,19 +61,19 @@ export default function AboutPage() {
               </p>
 
               <p className="m-0">
-                In January 2020, a severe car accident turned my life upside down, leaving me pinned down by chronic pain. It took <span className="text-white font-medium">four years of grit, resolience</span>and consistent physical workouts routines, deep emotional reframing, and precise systemic lifestyle modifications to achieve recovery.
+                In January 2020, a severe car accident turned my life upside down, leaving me pinned down by chronic pain. It took <span className="text-white font-medium">four years of grit, resilience,</span> and consistent physical workout routines, deep emotional reframing, and precise systemic lifestyle modifications to achieve recovery.
               </p>
 
               <p className="m-0">
-                As a physician, I know the intricate underlying <span className="text-[var(--color-lime)] font-medium">mechanism of chronic pain</span> architecture and the stark real-world limitations of relying solely on temporary medication containment strategies. As a survivor, I understand the deep mental and physical toll it takes on your daily functional freedom.
+                As a physician, I know the intricate underlying <span className="text-[var(--color-lime)] font-medium">mechanisms of chronic pain</span> architecture and the stark real-world limitations of relying solely on temporary medication containment strategies. As a survivor, I understand the deep mental and physical toll it takes on your daily functional freedom.
               </p>
 
               <p className="m-0">
-                Today, I combine my clinical expertise with my personal battle-tested recovery blueprint to coach individuals struggling with persistent, chronic pain presentations. My mission is simple: <strong className="text-white font-medium"></strong> to help you look past temporary fixes and build a sustainable, structured path back to a vibrant, pain-free life.
+                Today, I combine my clinical expertise with my personal battle-tested recovery blueprint to coach individuals struggling with persistent, chronic pain presentations. My mission is simple: to help you look past temporary fixes and build a sustainable, structured path back to a vibrant, pain-free life.
               </p>
 
               <p className="display text-2xl md:text-3xl text-white/95 leading-snug tracking-wide pt-2 italic">
-                “Let’s sync your lifestyle with your recovery and get you back on pain free track."
+                “Let’s sync your lifestyle with your recovery and get you back on a pain-free track.”
               </p>
 
             </div>
@@ -84,7 +84,7 @@ export default function AboutPage() {
                 href={CONFIG_LINKS.calendly}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-lime text-base py-3.5 px-8 font-semibold tracking-wide"
+                className="btn btn-lime text-base py-3.5 px-8 font-semibold tracking-wide no-underline"
               >
                 Schedule Free Assessment call →
               </a>
