@@ -23,8 +23,17 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lifestyle Medicine // Chronic Pain Coaching",
-  description: "Evidence-based somatic and behavioral restructuring tracks.",
+  title: "Chronic Pain Free // Lifestyle Medicine",
+  description: "Evidence-based lifestyle tracks to break central synchronization loops and reclaim functional freedom.",
+  icons: {
+    // Explicitly targets your root image files to force browser caching to snap open
+    icon: [
+      { url: "/logo.png", type: "image/png" }
+    ],
+    apple: [
+      { url: "/logo.png", type: "image/png" }
+    ],
+  },
 };
 
 export default function RootLayout({

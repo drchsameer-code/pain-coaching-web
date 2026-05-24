@@ -19,7 +19,7 @@ export default function Hero() {
               rel="noopener noreferrer" 
               className="btn btn-lime text-base py-3.5 px-7"
             >
-              Book Free 45-Min Call →
+              Book Free 40-Min Call →
             </a>
             <a href="#approach" className="btn btn-ghost text-base py-3.5 px-7">
               The Methodology

@@ -83,7 +83,8 @@ export const CONFIG_LINKS = {
   formspreeEndpoint: "https://www.saveform.io/api/submit/f63d5e4d-eaea-43bd-897f-0bef2f30837a",
   instagram: "https://www.instagram.com/drchahmed",
   email: "drchsameer@gmail.com",
-  phone: "03291322225"
+  phone: "03291322225",
+  siteName: "chronic pain free"
 };
 
 export const BANK_DETAILS = {
