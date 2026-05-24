@@ -35,6 +35,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    google: "903G8rlyW4opfIb999n1KdYmzRZXmQPA1MCJMMSaMo0", 
+  },
   openGraph: {
     title: "Chronic Pain Free // Lifestyle Medicine & Pain Coaching",
     description: "Look past temporary pharmacological patches. Reclaim your body's structural baseline with a personalized, clinical recovery blueprint.",
